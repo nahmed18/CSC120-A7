@@ -14,11 +14,11 @@ _____ 1 pt: The `House`, `Library`, and `Cafe` classes all `extend` the `Buildin
 
 ### Level 1: `House.java` (3 pts)
 
-_____ 1 pt: The `House` class includes the requested attributes
+___**YES**__ 1 pt: The `House` class includes the requested attributes
 
-_____ 1 pt: The `House` class implements the requested accessors
+___**YES**__ 1 pt: The `House` class implements the requested accessors
 
-_____ 1 pt: The `House` class implements the requested additional methods (`moveIn(...)`, `moveOut(...)`, and `isResident(...)`)
+___**YES**__ 1 pt: The `House` class implements the requested additional methods (`moveIn(...)`, `moveOut(...)`, and `isResident(...)`)
 
 ### Level 2: `Library.java` (3 pts)
 
