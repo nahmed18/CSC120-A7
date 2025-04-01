@@ -6,5 +6,5 @@ interface LibraryRequirements {
     void returnBook(String title); 
     boolean containsTitle(String title);
     boolean isAvailable(String title);
-    boolean printCollection(); 
+    void printCollection(); 
 }
