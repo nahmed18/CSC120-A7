@@ -7,7 +7,7 @@ public class Library extends Building implements LibraryRequirements {
     private Hashtable<String, Boolean> collection; 
 
     /**
-     * Constructor for Library 
+     * Constructor for Library set up collection/hastable and call super to set up name, address, floors
      */
     public Library() {
       super("ZLibrary", "123 St", 10);
@@ -77,7 +77,7 @@ public class Library extends Building implements LibraryRequirements {
       } else { //if there are books in collection 
         for (String title : collection.keySet()) { 
           Boolean status = collection.get(title); //get the availability t/f 
-          String availability; //check availablity through status 
+          String availability; //set up availabliity as a string then check availablity through status 
           if (status == true) { //if book available print that 
             availability = "Available";
           } else { //book unavailable print that 
@@ -90,8 +90,9 @@ public class Library extends Building implements LibraryRequirements {
     
   
     public static void main(String[] args) {
-      Library ZLib = new Library();
+      Library ZLib = new Library(); //create new library 
 
+      //create books 
       String b1 = "The Kite Runner";
       String b2 = "Divergent";
       String b3 = "Hunger Games";
@@ -126,5 +127,4 @@ public class Library extends Building implements LibraryRequirements {
       System.out.println(ZLib.isAvailable(b3));
 
     }
-  
   }
