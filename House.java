@@ -15,7 +15,7 @@ public class House extends Building implements HouseRequirements{
    * @param hasDiningRoom - takes in a boolean t/f if there is a dining room
    */
   public House(String name, String address, int nFloors, boolean hasDiningRoom) {
-    super(name , address, nFloors);
+    super(name, address, nFloors);
     this.residents = new ArrayList<Student>();
     this.hasDiningRoom = hasDiningRoom;
     System.out.println("You have built a house: 🏠");
