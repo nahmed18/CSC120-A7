@@ -8,9 +8,12 @@ public class Library extends Building implements LibraryRequirements {
 
     /**
      * Constructor for Library set up collection/hastable and call super to set up name, address, floors
+     * @param name - the name of the library 
+     * @param address - the address of the library 
+     * @param nFloors - the number of floors in the library
      */
-    public Library() {
-      super("ZLibrary", "123 St", 10);
+    public Library(String name, String address, int nFloors) {
+      super(name, address, nFloors);
       this.collection = new Hashtable<String, Boolean>();
       System.out.println("You have built a library: 📖");
     }
@@ -54,6 +57,7 @@ public class Library extends Building implements LibraryRequirements {
     /**
      * Check if library contains a book 
      * @param title - the name of the book asked about 
+     * @return title - t/f if title is in the collection 
      */
     public boolean containsTitle(String title) {
       return collection.containsKey(title);
@@ -90,7 +94,7 @@ public class Library extends Building implements LibraryRequirements {
     
   
     public static void main(String[] args) {
-      Library ZLib = new Library(); //create new library 
+      Library ZLib = new Library("Zlibrary", "virtual st", 100); //create new library 
 
       //create books 
       String b1 = "The Kite Runner";

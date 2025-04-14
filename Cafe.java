@@ -9,13 +9,16 @@ public class Cafe extends Building implements CafeRequirements {
 
     /**
      * Constructor for Cafe sets up coffee oz, sugar, cream, and cups
+     * @param name - the name of the cafe 
+     * @param address - the address of the cafe 
+     * @param nFloors - the number of floors in the cafe
      * @param nCoffeeOunces - # of oz coffee
      * @param nSugarPackets - # of sugar packets
      * @param nCreams - # of splashes of cream
      * @param nCups - # of cups
      */
-    public Cafe(int nCoffeeOunces, int nSugarPackets, int nCreams, int nCups) {
-        super("Qawah House", "Yemeni St", 1);
+    public Cafe(String name, String address, int nFloors, int nCoffeeOunces, int nSugarPackets, int nCreams, int nCups) {
+        super(name, address, nFloors);
         this.nCoffeeOunces = nCoffeeOunces; 
         this.nSugarPackets = nSugarPackets; 
         this.nCreams = nCreams; 
@@ -60,7 +63,7 @@ public class Cafe extends Building implements CafeRequirements {
     
     
     public static void main(String[] args) {
-        Cafe Qawah = new Cafe(10, 5, 5, 10); //create a new cafe 
+        Cafe Qawah = new Cafe("Qawah House", "yemeni st", 2, 10, 5, 5, 10); //create a new cafe 
 
         Qawah.sellCoffee(3, 4, 4); //test if it subtracts from inventory properly 
         System.out.println(Qawah.nCoffeeOunces);
